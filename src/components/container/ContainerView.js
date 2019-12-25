@@ -6,14 +6,14 @@ import PropTypes from 'prop-types';
 import { spacing } from '../../theme';
 
 const CONTAINER = {
+    flex: 1,
     padding: spacing[4],
-    background: 'red'
   }
 
 const ContainerView = props => {
-    const {  children, ...rest } = props;   
+    const {  children, style, ...rest } = props;   
     return (
-        <SafeAreaView {...rest} style={CONTAINER}>
+        <SafeAreaView style={[CONTAINER, style]}  {...rest} >
             {children}
         </SafeAreaView>
     )
