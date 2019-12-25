@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 import PropTypes from 'prop-types';
 
@@ -13,9 +13,9 @@ const CONTAINER = {
 const ContainerView = props => {
     const {  children, ...rest } = props;   
     return (
-        <View {...rest} style={CONTAINER}>
+        <SafeAreaView {...rest} style={CONTAINER}>
             {children}
-        </View>
+        </SafeAreaView>
     )
 }
 

@@ -16,7 +16,7 @@ const AppNavigator = createStackNavigator({
   }, {
       defaultNavigationOptions: ({navigation}) => {
           return {
-              headerTitle: navigation.state.routeName || 'New App'
+              headerTitle: navigation.state.routeName
           }
       }
   });

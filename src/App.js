@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
    View, Button
 } from 'react-native';
 import { Provider } from 'react-redux';
 import { enableScreens } from "react-native-screens";
-
+import SplashScreen from 'react-native-splash-screen';
 
 enableScreens();
 
@@ -35,6 +35,11 @@ class DetailsScreen extends React.Component {
 
 
 const App = () => {
+  
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
   return (
     <Provider store={Store}>
       <AppContainer />

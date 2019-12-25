@@ -6,9 +6,11 @@ import ContainerView from '../../components/container/ContainerView';
 
 const LoginComponent = props => {
     const { handlePress } = props;
+    
     return (
         <ContainerView>
             <Text>Login Component!</Text>
+            
             <Button title="Create Account" onPress={handlePress} />
         </ContainerView>
     )
