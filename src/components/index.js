@@ -4,3 +4,4 @@ export * from './icon/icon.js';
 export * from './container/ContainerView.js';
 export * from './text-field/TextField.js';
 /* PLOP_INJECT_EXPORT */
+export * from './MyComponent/MyComponent';
