@@ -6,8 +6,11 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
+    "clean:android": "cd android/ && ./gradlew clean && cd .. && npx react-native run-android",
     "test": "jest",
-    "lint": "eslint ."
+    "test:watch": "jest --watch",
+    "lint": "eslint .",
+    "generate": "plop"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.7.1",
@@ -44,6 +47,7 @@
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
+    "plop": "^2.6.0",
     "react-test-renderer": "16.9.0"
   },
   "jest": {
